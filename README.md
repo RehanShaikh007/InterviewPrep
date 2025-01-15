@@ -8,6 +8,16 @@ Interview Prep is a responsive, full-stack application designed to help users pr
 - **Submission Management:** Create and view interview question submissions.
 
 ## Screenshots
+![image](https://github.com/user-attachments/assets/19f9a239-1d70-429c-9113-725eda310dcf)
+![image](https://github.com/user-attachments/assets/11466173-ab50-4e08-943f-5b66db503e1d)
+![image](https://github.com/user-attachments/assets/54800412-ed96-4b5a-a0e6-6f8274dbe536)
+![image](https://github.com/user-attachments/assets/7b5d9841-7376-42ff-9e30-937a467acf2a)
+![image](https://github.com/user-attachments/assets/ead00b9e-5a34-4109-b74c-7d4648dbc226)
+![image](https://github.com/user-attachments/assets/45e69272-b301-42f8-9767-12ef2f48c727)
+![image](https://github.com/user-attachments/assets/afa6e04d-24df-4cc3-ad8c-1dda0a834661)
+![image](https://github.com/user-attachments/assets/7decfa03-f656-49fa-a0cd-c0e3cbe35a3f)
+
+
 
 
 ## Design Choices
