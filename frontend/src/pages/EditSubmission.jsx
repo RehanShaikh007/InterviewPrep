@@ -23,7 +23,7 @@ const EditSubmission = ({ submission, closeModal, setSubmissions }) => {
       closeModal();
     } catch (err) {
       console.error(err);
-      alert("Error updating submission");
+      alert("You can only update your own submission");
     }
   };
 
@@ -33,7 +33,7 @@ const EditSubmission = ({ submission, closeModal, setSubmissions }) => {
         className="bg-white p-6 rounded shadow max-w-md w-full sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl"
         onSubmit={handleSubmit}
       >
-        <h2 className="text-2xl font-bold mb-4">Edit Submission</h2>
+        <h2 className="text-2xl font-bold mb-4 text-pink-800">Edit Submission</h2>
         <input
           type="text"
           placeholder="Name"
@@ -71,13 +71,13 @@ const EditSubmission = ({ submission, closeModal, setSubmissions }) => {
           <button
             type="button"
             onClick={closeModal}
-            className="bg-gray-500 text-white px-4 py-2 rounded w-full sm:w-auto"
+            className="bg-pink-700 text-white px-4 py-2 rounded w-full sm:w-auto"
           >
             Cancel
           </button>
           <button
             type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded w-full sm:w-auto"
+            className="bg-cyan-700 text-white px-4 py-2 rounded w-full sm:w-auto"
           >
             Save
           </button>

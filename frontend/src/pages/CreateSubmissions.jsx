@@ -32,7 +32,7 @@ const CreateSubmissions = () => {
     <>
       <Navbar />
       <div className="flex justify-center items-center min-h-screen bg-pink-200 px-4">
-        <form className="bg-white p-6 rounded shadow w-full max-w-lg">
+        <form onSubmit={handleSubmit} className="bg-white p-6 rounded shadow w-full max-w-lg">
           <h2 className="text-2xl font-bold mb-4 text-pink-800 bg-white text-center">
             Post Interview Questions
           </h2>

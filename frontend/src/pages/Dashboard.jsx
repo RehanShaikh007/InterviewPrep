@@ -36,7 +36,7 @@ const Dashboard = () => {
         );
       } catch (err) {
         console.error(err);
-        alert("Error deleting submission");
+        alert("You can only Delete your own submission");
       }
     }
   };
@@ -50,16 +50,18 @@ const Dashboard = () => {
     <>
       <Navbar />
       <div className="p-6 pb-20 bg-pink-200">
-        <section className="flex justify-between items-center mb-4">
-          <h1 className="text-3xl font-bold text-pink-800">Submissions</h1>
-          <Link to="/create">
-            <span>
-              <button className="bg-pink-800 text-white px-4 py-2 rounded-lg">
-                Create Submission
-              </button>
-            </span>
-          </Link>
-        </section>
+      <section className="flex flex-col sm:flex-row justify-between items-center mb-4">
+   
+    <h1 className="text-2xl sm:text-3xl font-bold text-pink-800 mb-4 sm:mb-0">
+      Submissions
+    </h1>
+ 
+    <Link to="/create">
+      <button className="bg-pink-800 text-white px-4 py-2 rounded-lg w-full sm:w-auto hover:bg-pink-700 transition">
+        Create Submission
+      </button>
+    </Link>
+  </section>
 
         <ul className="space-y-4">
           {submissions.map((submission) => (
