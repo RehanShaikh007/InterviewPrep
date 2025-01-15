@@ -5,10 +5,13 @@ import cors from "cors";
 import submissionRoutes from "./routes/submissionRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import cookieParser from "cookie-parser";
+import path from 'path';
 
 dotenv.config();
 
 const app = express();
+
+const __dirname = path.resolve();
 
 app.use(express.json());
 app.use(
@@ -26,6 +29,13 @@ mongoose
 
 app.use("/api/submissions", submissionRoutes);
 app.use("/api/users", userRoutes);
+
+app.use(express.static(path.join(__dirname, '/frontend/dist')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
+})
+
 
 app.use(cookieParser());
 
